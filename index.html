@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Gator Enterprise | Engine Quoting
+    </title>
+
+    <script src="https://unpkg.com/vue@next/dist/vue.js"></script>
+    <style>
+        .banner {
+            width: 100%;
+            text-align: center;
+            padding-bottom: 2em;
+        }
+        .banner img {
+            max-width: 640px;
+            max-height: 320px;
+        }
+        #app {
+            max-width: 960px;
+            margin:0 auto;
+        }
+        form > div {
+            padding:0.5em 1em;
+            float: left;
+        }
+        label {display: block;}
+        .grand-total {
+            clear:both;
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+
+<section id="app">
+<div class="banner">
+    <img src="banner.jpg" alt="Gator Enterprise" />
+</div>
+<form>
+    <div>
+        <strong>Cam Bearings - ${{camBearingsCost}}</strong>
+        <label><input v-model="camBearingsCost" name="camBearingsCost" type="radio" value="20"> Level 1 - $20</label>
+        <label><input v-model="camBearingsCost" name="camBearingsCost" type="radio" value="45"> Level 2 - $45</label>
+        <label><input v-model="camBearingsCost" name="camBearingsCost" type="radio" value="80"> Level 3 - $80</label>
+    </div>
+    <div>
+        <strong>Main Bearings - ${{mainBearingsCost}}</strong>
+        <label><input v-model="mainBearingsCost" name="mainBearingsCost" type="radio" value="20"> Level 1 - $25</label>
+        <label><input v-model="mainBearingsCost" name="mainBearingsCost" type="radio" value="45"> Level 2 - $72</label>
+        <label><input v-model="mainBearingsCost" name="mainBearingsCost" type="radio" value="80"> Level 3 - $121</label>
+    </div>
+    <div>
+        <strong>Rod Bearings - ${{rodBearingsCost}}</strong>
+        <label><input v-model="rodBearingsCost" name="rodBearingsCost" type="radio" value="20"> Level 1 - $23</label>
+        <label><input v-model="rodBearingsCost" name="rodBearingsCost" type="radio" value="45"> Level 2 - $70</label>
+        <label><input v-model="rodBearingsCost" name="rodBearingsCost" type="radio" value="80"> Level 3 - $121</label>
+    </div>
+  
+</form>
+<h2 class="grand-total">Total - ${{total}}</h2>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
