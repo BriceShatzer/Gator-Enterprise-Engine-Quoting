@@ -15,7 +15,11 @@ if( accessCheck.toLowerCase() === 'degeeter') {
         data: {
             camBearingsCost: 0,
             mainBearingsCost: 0,
-            rodBearingsCost: 0 
+            rodBearingsCost: 0,
+            crankshaftCost: 0,
+            connectingRodsCost: 0,
+            pistonsCost: 0,
+            pistonRingsCost: 0, 
         },
         computed: {
             total: function(){
@@ -23,6 +27,10 @@ if( accessCheck.toLowerCase() === 'degeeter') {
                 val+=parseInt(this.camBearingsCost); 
                 val+=parseInt(this.mainBearingsCost);
                 val+=parseInt(this.rodBearingsCost);
+                val+=parseInt(this.crankshaftCost);
+                val+=parseInt(this.connectingRodsCost);
+                val+=parseInt(this.pistonsCost);
+                val+=parseInt(this.pistonRingsCost);
                 return val;
             }
         }
