@@ -1,0 +1,31 @@
+.banner {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 2em;
+}
+.banner img {
+    max-width: 640px;
+    max-height: 320px;
+}
+#app {
+    /*display: none; /* set for access control */
+    max-width: 960px;
+    margin:0 auto;
+}
+form > div {
+    padding:0.5em 1em;
+    float: left;
+    width: 25%;
+    clear: left;
+}
+label {
+    display: block;
+    display: flex;
+    justify-content: flex-end;
+
+}
+/* label div {padding:0 1em;} */
+.grand-total {
+    clear:both;
+    text-align: center;
+}
