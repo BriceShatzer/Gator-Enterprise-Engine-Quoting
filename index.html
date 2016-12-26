@@ -55,12 +55,48 @@
         <label><input v-model="pistonsCost" name="pistonsCost" type="radio" value="603"> Level 3 - $603</label>
     </section>  
     <section>
-        <div>Piston Rings- ${{pistonRingsCost}}</div>      
+        <div>Piston Rings - ${{pistonRingsCost}}</div>      
         <label><input v-model="pistonRingsCost" name="pistonRingsCost" type="radio" value="45"> Level 1 - $45</label>
         <label><input v-model="pistonRingsCost" name="pistonRingsCost" type="radio" value="83"> Level 2 - $83</label>
         <label><input v-model="pistonRingsCost" name="pistonRingsCost" type="radio" value="182"> Level 3 - $182</label>
     </section>  
+    <section>
+        <div>Oil Pump - ${{oilPumpCost}}</div>      
+        <label><input v-model="oilPumpCost" name="oilPumpCost" type="radio" value="62"> Level 1 - $62</label>
+        <label><input v-model="oilPumpCost" name="oilPumpCost" type="radio" value="142"> Level 2 - $142</label>
+        <label><input v-model="oilPumpCost" name="oilPumpCost" type="radio" value="369"> Level 3 - $369</label>
+    </section>
+    <section>
+        <div>Intake Manifold - ${{intakeManifoldCost}}</div>      
+        <label><input v-model="intakeManifoldCost" name="intakeManifoldCost" type="radio" value="165"> Level 1 - $165</label>
+        <label><input v-model="intakeManifoldCost" name="intakeManifoldCost" type="radio" value="225"> Level 2 - $225</label>
+        <label><input v-model="intakeManifoldCost" name="intakeManifoldCost" type="radio" value="350"> Level 3 - $350</label>
+    </section>
+    
 
+    <section>
+        <div>Carb - ${{carbCost}}</div>      
+        <label><input v-model="carbCost" name="carbCost" type="radio" value="500">Carb (2 bbl) and adapter - $500</label>
+        <label><input v-model="carbCost" name="carbCost" type="radio" value="620">Carb (4 bbl) - $620</label>
+    </section>
+
+
+    <section class="misc">
+        <div>Total Misc. - $1624</div>
+        <p>Valve Covers - $35</p>
+        <p>Water Pump - $55</p>
+        <p>Water Inlet - $16</p>
+        <p>Pulley Set - $99</p>
+        <p>Distributor - $175</p>
+        <p>Plug Wires - $89</p>
+        <p>Spark Plugs - $35</p>
+        <p>Top End Gaskets - $25</p>
+        <p>Starter - $130</p>
+        <p>Consumables - $150</p>
+        <p>Shipping - $175</p>
+        <p>Labor - $675 </p>
+
+    </section>
   
 </form>
 <h2 class="grand-total">Total - ${{total}}</h2>

@@ -36,6 +36,7 @@ label {
 */
 }
 /* label div {padding:0 1em;} */
+.misc p {margin:0;}
 .grand-total {
     clear:both;
     text-align: center;
