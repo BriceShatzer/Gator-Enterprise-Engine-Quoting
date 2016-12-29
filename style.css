@@ -20,7 +20,12 @@ form section {
     max-width: 300px;
 }
 section div {
-    text-align: center;
+    text-align: right;
+    font-weight: 700;
+}
+section p {
+    margin:0;
+    text-align: right;
     font-weight: 700;
 }
 input[type="radio"] {
@@ -36,7 +41,8 @@ label {
 */
 }
 /* label div {padding:0 1em;} */
-.misc p {margin:0;}
+/* .misc p {margin:0;} */
+.block p {font-weight: 400}
 .grand-total {
     clear:both;
     text-align: center;
