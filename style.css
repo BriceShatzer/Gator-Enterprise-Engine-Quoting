@@ -1,3 +1,10 @@
+html { 
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+
 .banner {
     width: 100%;
     text-align: center;
@@ -13,11 +20,12 @@
     margin:0 auto;
 }
 form section {
-    padding:0.5em 1em;
-    float: left;
-    width: 50%;
-    clear: left;
-    max-width: 300px;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+    width: 50%; 
+    border-bottom: 1px solid #000;
 }
 section div {
     text-align: right;
@@ -44,6 +52,7 @@ label {
 /* .misc p {margin:0;} */
 .block p {font-weight: 400}
 .grand-total {
-    clear:both;
-    text-align: center;
+    position: fixed;
+    left: 75%;
+    bottom: 1em;
 }
