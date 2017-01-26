@@ -56,3 +56,22 @@ label {
     left: 75%;
     bottom: 1em;
 }
+
+@media screen and (max-width: 640px) {
+    form section {
+        width: 75%;
+        float: none;
+    }
+    .grand-total {
+        position: static;
+        text-align: center;
+        clear: both;
+    }
+}
+@media screen and (max-width: 480px) {
+    form section {
+        width: 100%;
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+    }
+}
