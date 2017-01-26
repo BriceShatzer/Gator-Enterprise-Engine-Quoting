@@ -36,10 +36,11 @@ section p {
     text-align: right;
     font-weight: 700;
 }
-input[type="radio"] {
+input[type="radio"],
+input[type="checkbox"] {
     margin-left: 1em;
     margin-right: 1em;
-}
+} 
 label {
     text-align: right;
     display: block;
@@ -50,6 +51,7 @@ label {
 }
 /* label div {padding:0 1em;} */
 /* .misc p {margin:0;} */
+.checked {font-weight: 700}
 .block p {font-weight: 400}
 .grand-total {
     position: fixed;

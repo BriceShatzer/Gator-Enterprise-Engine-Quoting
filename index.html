@@ -26,9 +26,6 @@
         <p>Block Prep (parts) - $25</p>        
     </section>
     <section>
-        <p>In-house machine work (for freshen only) - $150</p>
-    </section>
-    <section>
         <div>Cam Bearings - ${{camBearingsCost}}</div>
         <label>Level 1 - $20 <input v-model="camBearingsCost" name="camBearingsCost" type="radio" value="20"></label>
         <label>Level 2 - $45 <input v-model="camBearingsCost" name="camBearingsCost" type="radio" value="45"></label>
@@ -150,7 +147,11 @@
         <p>Plug Wires - $89</p>
         <p>Spark Plugs - $35</p>
         <p>Top End Gaskets - $25</p>
-        <p>Starter - $130</p>
+    </section>
+    <section>
+        <label v-bind:class="{ checked: starterNeeded }">        
+            Starter - $130 <input type="checkbox" v-model="starterNeeded">
+        </label>
     </section>
     <section>
         <div>Carb - ${{carbCost}}</div>      

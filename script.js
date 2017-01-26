@@ -29,6 +29,7 @@ if( accessCheck.toLowerCase() === 'degeeter') {
             pushRodsCost: 0,
             rockerNutCost: 0,
             intakeManifoldCost: 0,
+            starterNeeded: false,
             carbCost: 0,
         },
         computed: {
@@ -38,7 +39,7 @@ if( accessCheck.toLowerCase() === 'degeeter') {
                 val+=450; // Block Machine Work
                 val+=90; // Block Prep (labor)
                 val+=25; // Block Prep (parts)
-                val+=150; // In-house machine work (for freshen only)
+                //val+=150; // In-house machine work (for freshen only)
                 val+=parseInt(this.camBearingsCost); 
                 val+=parseInt(this.mainBearingsCost);
                 val+=parseInt(this.rodBearingsCost);
@@ -72,7 +73,8 @@ if( accessCheck.toLowerCase() === 'degeeter') {
                 val+=89; // Plug Wires
                 val+=35; // Spark Plugs
                 val+=25; // Top End Gaskets
-                val+=130; // Starter
+                if(this.starterNeeded){val+=130}
+                //val+=130; // Starter
                 val+=parseInt(this.carbCost);
                 val+=150; // Consumables
                 val+=175; // Shipping
